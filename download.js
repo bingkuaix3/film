@@ -63,5 +63,20 @@ define(function(require) {
 
 	};
 
+	Model.prototype.pictureBtnClick = function(event){
+		var data = this.comp("picturedata");
+		var params = {"picturedata" : data.val("picture")};
+		var success = function(resultData) {
+			
+		};
+		
+		baas.sendRequest({
+			"url" : "/weixin/downloadpicture",
+			"action" : "downloadpicture",
+			"params" : params,
+			"success" : success
+		});
+	};
+
 	return Model;
 });

@@ -35,8 +35,8 @@
       <label class="x-label" xid="label12" bind-text="picturedata.label('username')"></label>
       <input component="$UI/system/components/justep/input/input" class="form-control x-edit" xid="input12" bind-ref="picturedata.ref('username')"></input></div> 
      <div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelInput10">
-      <label class="x-label" xid="label10" bind-text="picturedata.label('useraddress')"></label>
-      <input component="$UI/system/components/justep/input/input" class="form-control x-edit" xid="input10" bind-ref="picturedata.ref('useraddress')"></input></div> 
+      <label class="x-label" xid="label10" bind-text="picturedata.label('picture')"></label>
+      <input component="$UI/system/components/justep/input/input" class="form-control x-edit" xid="input10" bind-ref="picturedata.ref('picture')"></input></div> 
      <div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelInput9">
       <label class="x-label" xid="label9" bind-text="picturedata.label('doctor_suggestion')"></label>
       <input component="$UI/system/components/justep/input/input" class="form-control x-edit" xid="input9" bind-ref="picturedata.ref('doctor_suggestion')"></input></div> 
@@ -50,7 +50,7 @@
      <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="保存药方" xid="changeBtn" onClick="changeBtnClick">
       <i xid="i8"></i>
       <span xid="span8">保存药方</span></a> 
-     <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="下载图片" xid="pictureBtn">
+     <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="下载图片" xid="pictureBtn" onClick="pictureBtnClick">
       <i xid="i9"></i>
       <span xid="span9">下载图片</span></a> </div> </div> </div></div></div>
    <div class="x-panel-bottom" xid="bottom1"><div component="$UI/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified" tabbed="true" xid="buttonGroup1"><a component="$UI/system/components/justep/button/button" class="btn btn-default" label="查看" xid="listBtn" target="listcontent">
