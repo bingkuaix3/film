@@ -28,7 +28,7 @@
     <div class="panel-heading" xid="heading3">
      <h4 class="panel-title" xid="h43">开药</h4></div> 
     <div class="panel-body" xid="body3">
-     <div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelInput13">
+     <img src="" alt="" xid="image1" id="img" style="height:162px;width:176px;background-color:transparent;display:none" bind-attr-src='$model.getImgUrl( $model.picturedata.val("picture"))'></img><div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelInput13">
       <label class="x-label" xid="label13" bind-text="picturedata.label('id')"></label>
       <input component="$UI/system/components/justep/input/input" class="form-control x-edit" xid="input13" bind-ref="picturedata.ref('id')"></input></div> 
      <div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelInput12">
@@ -45,7 +45,8 @@
       <input component="$UI/system/components/justep/input/input" class="form-control x-edit" xid="input8" bind-ref="picturedata.ref('price')"></input></div> 
      <div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelInput11">
       <label class="x-label" xid="label11" bind-text="picturedata.label('order_status')"></label>
-      <input component="$UI/system/components/justep/input/input" class="form-control x-edit" xid="input11" bind-ref="picturedata.ref('order_status')"></input></div> </div> 
+      <input component="$UI/system/components/justep/input/input" class="form-control x-edit" xid="input11" bind-ref="picturedata.ref('order_status')"></input></div> 
+  </div> 
     <div class="panel-footer" xid="footer3">
      <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="保存药方" xid="changeBtn" onClick="changeBtnClick">
       <i xid="i8"></i>
@@ -53,7 +54,7 @@
      <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="下载图片" xid="pictureBtn" onClick="pictureBtnClick">
       <i xid="i9"></i>
       <span xid="span9">下载图片</span></a> </div> </div> </div></div></div>
-   <div class="x-panel-bottom" xid="bottom1"><div component="$UI/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified" tabbed="true" xid="buttonGroup1"><a component="$UI/system/components/justep/button/button" class="btn btn-default" label="查看" xid="listBtn" target="listcontent">
+   <div class="x-panel-bottom" xid="bottom1"><div component="$UI/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified" tabbed="true" xid="buttonGroup1"><a component="$UI/system/components/justep/button/button" class="btn btn-default" label="查看" xid="listBtn" target="listcontent" onClick="listBtnClick">
    <i xid="i3"></i>
    <span xid="span3">查看</span></a>
   <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="处理" xid="delBtn" target="delcontent">

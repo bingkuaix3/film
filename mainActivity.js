@@ -32,7 +32,7 @@ define(function(require) {
 			self._userDefaultName = weixinUser.nickname + "（来自微信的用户）";
 			self._userDefaultAddress = weixinUser.country + weixinUser.province + weixinUser.city;
 			self._userPhotoURL = weixinUser.headimgurl;
-
+			
 		});
 
 	};
@@ -67,16 +67,15 @@ define(function(require) {
 					isShowProgressTips : 1, // 默认为1，显示进度提示
 					success : function(res) {
 						var serverId = res.serverId;
-
-						alert(serverId);// 返回图片的服务器端ID
-
 						var demo = self.comp("picturedata");
 						var newdemo = demo.newData({
 							defaultValues : [ {
 								"id" : justep.UUID.createUUID(),
 								"username" : self._userDefaultName,
 								"picture" : serverId,
-								"order_status" : "未处理"
+								"userid": self._userID,
+								"order_status" : "未处理",
+								"useraddress": this._userDefaultAddress
 							} ]
 						});
 						baas.sendRequest({

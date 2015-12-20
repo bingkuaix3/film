@@ -8,7 +8,8 @@
   <column label="医生建议" name="doctor_suggestion" type="String" xid="xid4"></column>
   <column label="价格" name="price" type="Date" xid="xid5"></column>
   <column label="订单状态" name="order_status" type="String" xid="xid6"></column>
-  <column label="图片" name="picture" type="String" xid="xid7"></column></div></div>  
+  <column label="图片" name="picture" type="String" xid="xid7"></column>
+  <column label="用户openid" name="userid" type="String" xid="xid8"></column></div></div>  
   <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full"
     xid="panel1"> 
     <div class="x-panel-top" xid="top1"> 
